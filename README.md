@@ -8,6 +8,8 @@
 ## прошивка
 Файлы прошивки были взяты из этого репозитория: <https://github.com/ArminJo/micronucleus-firmware>
 
+Рекомендуемые fuse биты (avrdude): High Byte - **0xDD**; Low Byte - **0xF1**
+
 Нужный бутлоадер лежит в папке attiny85_files. 
 * t85_entry_on_reset_activePullup_fastExit.hex - полная прошивка, если вы прошиваете через внешний программатор (рекомедую именно этот метод);
 * upgrade-t85_entry_on_reset_activePullup_fastExit.hex - файл upgrade, которым можно обновить прошивку через штатный загрузчик.
@@ -23,3 +25,8 @@
 ## видео
 
 *готовится*
+
+##распиновка
+Распиновка Digispark взята от [сюда](https://www.deviantart.com/mortenaaserud/art/Digispark-Attiny85-Pinout-738150591 "pinout").
+
+![pinout](/img/pinout.png "pinout")
