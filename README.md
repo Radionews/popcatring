@@ -5,6 +5,16 @@
 
 За вдохновение спасибо [КТ](https://www.youtube.com/channel/UC2zVxdurTDmeGA-jOLt_XRw "Канал КТ").
 
+## как повторить проект?
+* скачиваем архив проекта
+* прошиваем attiny85 через программатор t85_entry_on_reset_activePullup_fastExit.hex
+* читаем и изменяем fuse биты (**avrdude** High Byte - **0xDD**; Low Byte - **0xF1**)
+* открываем pop_cat_attiny85.ino и жмем прошивку
+* вставляем attiny85 в usb и она прошивается
+* собираем все по схеме, хорошо изолируем
+* печатаем корпус, красим, термоклей
+* **PROFIT!**
+
 ## прошивка
 Файлы прошивки были взяты из этого репозитория: <https://github.com/ArminJo/micronucleus-firmware>
 
@@ -26,7 +36,7 @@
 
 *готовится*
 
-##распиновка
+## распиновка
 Распиновка Digispark взята от [сюда](https://www.deviantart.com/mortenaaserud/art/Digispark-Attiny85-Pinout-738150591 "pinout").
 
 ![pinout](/img/pinout.png "pinout")
